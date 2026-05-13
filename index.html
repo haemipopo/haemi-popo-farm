@@ -3,175 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haemi Popo Farm | 해미포포 농장</title>
-  <meta name="description" content="Premium organic pawpaw farm brand from Korea. Discover the story, health benefits, and seasonality of Haemi Popo Farm." />
+  <title>Haemi Popo Farm | 프리미엄 해미포포농장</title>
+  <meta name="description" content="대한민국에서 자란 자연스러운 프리미엄 포포. 해미포포농장의 정성과 사랑으로 만든 신선함을 경험하세요." />
+  
+  <!-- Modern Typography: Noto Serif KR for headings, Noto Sans KR for body -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#hero">
-        <span class="logo">🍃 포포팜</span>
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">해미포포농장</span>
       </a>
       <nav class="site-nav">
-        <a href="#hero">HOME</a>
-        <a href="#benefits">포포의 효능</a>
-        <a href="#tree">포포과나무 소개</a>
-        <a href="#story">포포농장 소개</a>
-        <a href="buy.html">한정기간 구매</a>
-        <a href="#contact">연락처</a>
+        <a href="#about">포포란?</a>
+        <a href="#benefits">건강 효능</a>
+        <a href="#tree">포포나무</a>
+        <a href="#story">농장 이야기</a>
+        <a href="#purchase" class="nav-cta">구매하기</a>
       </nav>
-      <button class="menu-toggle" aria-label="메뉴 열기">☰</button>
+      <button class="menu-toggle" aria-label="메뉴 열기">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
     </div>
   </header>
 
   <main>
     <section id="hero" class="hero-section">
+      <div class="hero-bg" style="background-image: url('assets/hero_farm_bg_1778646714036.png');"></div>
       <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <h1>자연이 주는<br>달콤한 선물, 포포</h1>
-        <p class="hero-copy">대한민국에서 자란 자연스러운 포포<br>정성과 사랑으로 만든 신선함을 경험하세요.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="buy.html">포포 주문하기</a>
-          <a class="button button-secondary" href="#story">농장 이야기</a>
+      <div class="container hero-content reveal">
+        <span class="eyebrow fade-up" style="animation-delay: 0.1s;">Haemi Popo Farm</span>
+        <h1 class="fade-up" style="animation-delay: 0.2s;">자연이 빚어낸<br>가장 달콤한 선물.</h1>
+        <p class="hero-copy fade-up" style="animation-delay: 0.3s;">청정한 땅에서 농부의 정성으로 키워낸 프리미엄 포포.<br>놀라운 맛과 자연의 에너지를 그대로 전해드립니다.</p>
+        <div class="hero-actions fade-up" style="animation-delay: 0.4s;">
+          <a class="button button-primary" href="#purchase">예약 구매하기</a>
+          <a class="button button-secondary" href="#about">포포 알아보기</a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="panel panel-card reveal">
+    <section id="about" class="panel panel-split">
       <div class="container grid-2">
-        <div>
-          <span class="section-label">포포에 대해</span>
-          <h2>과학적으로 입증된<br>강력한 항암 효과</h2>
-          <p>포포(Asimina triloba)는 미국, 일본, 호주 등 전 세계에서 자란 열대 과일입니다. 무엇보다 특별한 것은 포포의 뛰어난 항암 효능입니다.</p>
-          <p>포포에 함유된 생리활성 물질이 암세포 성장을 억제하는 것으로 과학적으로 입증되었습니다.</p>
+        <div class="reveal left">
+          <span class="section-label">포포(Pawpaw) 란?</span>
+          <h2>망고와 바나나가<br>입안에서 춤추는 듯한.</h2>
+          <p class="lead">포포는 북미 열대과일로, 숲 속의 버터라고 불릴 만큼 부드럽고 달콤합니다.</p>
+          <p>망고, 바나나, 파인애플을 섞어놓은 듯한 신비로운 맛과 크리미한 식감은 한 번 맛보면 잊을 수 없는 특별함을 선사합니다. 해미포포농장은 한국의 토양에 맞게 정성껏 재배하여 가장 신선한 상태로 전달합니다.</p>
         </div>
-        <div class="photo-card photo-card-large">
-          <div class="photo-card-inner" style="background-image: linear-gradient(170deg, rgba(34, 51, 33, 0.22), rgba(255, 255, 255, 0.04)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 300 300%22><rect fill=%22%23e4ddcd%22 width=%22300%22 height=%22300%22/><circle cx=%22150%22 cy=%22150%22 r=%2280%22 fill=%22%2378956c%22 opacity=%220.3%22/></svg>');"></div>
+        <div class="photo-card reveal right">
+          <img src="assets/pawpaw_fruit_cut_1778646834562.png" alt="반으로 자른 신선한 포포 열매" class="photo-img">
         </div>
       </div>
     </section>
 
-    <section id="benefits" class="panel reveal">
+    <section id="benefits" class="panel panel-dark">
+      <div class="container text-center reveal up">
+        <span class="section-label">Health Benefits</span>
+        <h2 class="section-title">놀라운 자연의 항암 에너지</h2>
+        <p class="section-subtitle">맛뿐만 아니라 건강에도 탁월한 슈퍼푸드 포포의 놀라운 효능을 확인하세요.</p>
+      </div>
       <div class="container">
-        <span class="section-label">포포의 효능</span>
-        <h2>포포가 전하는 건강한 에너지</h2>
         <div class="benefits-grid">
-          <article class="benefit-item">
-            <div class="benefit-icon">🌟</div>
-            <h3>항암 전투 성분</h3>
-            <p>포포에 포함된 아세토게닌 성분이 암세포에 강력하게 작용합니다.</p>
+          <article class="benefit-card reveal up" style="transition-delay: 0.1s;">
+            <div class="benefit-icon">🛡️</div>
+            <h3>강력한 항암 작용</h3>
+            <p>포포에 함유된 '아세토게닌' 성분은 강력한 항암 활성 물질로, 암세포의 성장을 억제하는 데 도움을 줄 수 있습니다.</p>
           </article>
-          <article class="benefit-item">
-            <div class="benefit-icon">💪</div>
-            <h3>항염 작용 개선</h3>
-            <p>항산화 성분이 몸속 염증을 억제합니다.</p>
+          <article class="benefit-card reveal up" style="transition-delay: 0.2s;">
+            <div class="benefit-icon">✨</div>
+            <h3>뛰어난 항산화 효과</h3>
+            <p>풍부한 비타민과 미네랄, 항산화 물질이 체내 활성산소를 제거하여 세포 노화를 방지합니다.</p>
           </article>
-          <article class="benefit-item">
-            <div class="benefit-icon">❤️</div>
-            <h3>혈관-뼈 건강</h3>
-            <p>포포의 섬유질이 혈관과 뼈를 건강하게 합니다.</p>
+          <article class="benefit-card reveal up" style="transition-delay: 0.3s;">
+            <div class="benefit-icon">🌿</div>
+            <h3>소화 및 장 건강</h3>
+            <p>다량의 식이섬유가 포함되어 있어 장 운동을 원활하게 하고 소화 기능 개선에 탁월합니다.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="tree" class="panel panel-split reveal">
+    <section id="tree" class="panel panel-parallax">
+      <div class="parallax-bg" style="background-image: url('assets/pawpaw_tree_1778646967837.png');"></div>
+      <div class="parallax-overlay"></div>
+      <div class="container parallax-content reveal up">
+        <span class="section-label light">The Tree</span>
+        <h2>생명력 넘치는<br>아름다운 포포나무.</h2>
+        <p>봄에는 짙은 자줏빛의 매혹적인 꽃을 피우고, 여름에는 크고 넓은 잎사귀로 싱그러움을 뽐냅니다. 병해충에 강해 친환경적으로 자라는 포포나무는 자연 그대로의 생명력을 품고 있습니다.</p>
+      </div>
+    </section>
+
+    <section id="story" class="panel">
       <div class="container grid-2 reverse-on-mobile">
-        <div class="panel-image panel-image-tree"></div>
-        <div>
-          <span class="section-label">신비로운 포포나무</span>
-          <h2>포포나무의 특별한 이야기</h2>
-          <p>포포나무는 북미 원산지 나무로, 5월-6월에 아름다운 붉은색 꽃을 피웁니다. 수십 개의 작은 열매를 맺으며, 가을이 되면 황금빛으로 변합니다.</p>
-          <ul class="list-simple">
-            <li>수천 년 전부터 미국 원주민이 즐겨 먹던 열매</li>
-            <li>일본에서 시작된 본격 재배의 성공</li>
-            <li>한국에서 재배 기술 확립 및 상용화</li>
-          </ul>
+        <div class="photo-card reveal left">
+          <img src="assets/farm_scenery_1778646991649.png" alt="평화로운 해미포포농장 풍경" class="photo-img">
         </div>
-      </div>
-    </section>
-
-    <section id="story" class="panel panel-card reveal">
-      <div class="container grid-2">
-        <div>
-          <span class="section-label">농장의 이야기</span>
-          <h2>자연과 함께하는<br>포포농장의 여정</h2>
-          <p>포포농장은 자연의 리듬에 맞춰 포포를 재배합니다. 햇빛, 바람, 빗소리까지 모두가 포포의 성장에 영향을 미칩니다.</p>
-          <p>우리는 포포를 상품이 아닌 자연의 선물로 봅니다. 농부의 손으로 정성스럽게 키운 포포는 여러분의 건강과 행복을 위해 자라고 있습니다.</p>
-        </div>
-        <div class="quote-card">
-          <p>"자연이 주는 건강함과 농장의 따뜻한 감성을 모두에게 전하고 싶습니다."</p>
-          <span>— 포포 농장주</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="season" class="panel panel-season reveal">
-      <div class="container">
-        <span class="section-label">판매 기간</span>
-        <h2>9월 중순~10월 말</h2>
-        <p>포포농장의 신선한 포포는 매년 9월 중순부터 10월 말까지 한정 판매됩니다. 자연이 만든 최고의 맛을 이 시기에만 경험할 수 있습니다.</p>
-        <div class="season-grid">
-          <div class="season-card">
-            <h3>출시</h3>
-            <p>9월 중순</p>
-          </div>
-          <div class="season-card">
-            <h3>최적</h3>
-            <p>10월 초</p>
-          </div>
-          <div class="season-card">
-            <h3>마감</h3>
-            <p>10월 말</p>
+        <div class="reveal right">
+          <span class="section-label">Farm Story</span>
+          <h2>햇살과 바람이<br>키워낸 정직함.</h2>
+          <p>해미포포농장은 맑은 공기와 깨끗한 물이 흐르는 자연 속에 자리 잡고 있습니다.</p>
+          <p>우리는 인위적인 방법을 배제하고 자연의 흐름에 순응하며 포포를 키웁니다. 나무 한 그루, 열매 하나에 농부의 땀과 정성을 담아 가장 완벽한 순간에 수확합니다. 자연이 주는 최고의 건강을 여러분의 식탁에 올리겠습니다.</p>
+          
+          <div class="quote-block">
+            <p>"자연의 순리대로 키운 포포만이 진정한 맛과 향을 낼 수 있습니다."</p>
+            <span class="quote-author">— 해미포포농장 농부</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="purchase" class="panel panel-cta reveal">
-      <div class="container cta-content">
-        <div>
-          <span class="section-label">구매</span>
-          <h2>지금 포포를 만나보세요</h2>
-          <p>자연이 빚어낸 달콤한 선물을 당신의 집 앞까지 배송해 드립니다.</p>
-        </div>
-        <a class="button button-primary" href="buy.html">구매 페이지로 이동</a>
-      </div>
-    </section>
-
-    <section id="contact" class="panel panel-contact reveal">
-      <div class="container grid-2 reverse-on-mobile">
-        <div>
-          <span class="section-label">연락처</span>
-          <h2>포포농장에<br>연락하세요</h2>
-          <p>문의사항, 주문, 협업 제안 등 언제든지 연락주세요. 포포농장의 신선한 소식을 전해드립니다.</p>
-          <div class="contact-grid">
-            <div>
-              <strong>📧 이메일</strong>
-              <p><a href="mailto:popopark@farm.com">popopark@farm.com</a></p>
+    <section id="purchase" class="panel panel-purchase">
+      <div class="container reveal up">
+        <div class="purchase-box">
+          <div class="purchase-info">
+            <span class="section-label">한정 판매</span>
+            <h2>자연이 허락한<br>짧은 기다림.</h2>
+            <p>신선한 포포는 <strong>매년 9월 중순부터 10월 말</strong>까지만 한정적으로 수확 및 판매됩니다.<br>가장 맛있는 시기에만 만날 수 있는 특별함을 놓치지 마세요.</p>
+            
+            <div class="season-timeline">
+              <div class="timeline-step">
+                <div class="step-dot"></div>
+                <div class="step-text">9월 중순<br><span>첫 수확</span></div>
+              </div>
+              <div class="timeline-step active">
+                <div class="step-dot"></div>
+                <div class="step-text">10월 초<br><span>최적기</span></div>
+              </div>
+              <div class="timeline-step">
+                <div class="step-dot"></div>
+                <div class="step-text">10월 말<br><span>판매 종료</span></div>
+              </div>
             </div>
-            <div>
-              <strong>📞 전화</strong>
-              <p><a href="tel:010-1234-5678">010-1234-5678</a></p>
-            </div>
-            <div>
-              <strong>🕐 운영시간</strong>
-              <p>9월 중순 ~ 10월 말</p>
-            </div>
-            <div>
-              <strong>📍 위치</strong>
-              <p>경북 경산시</p>
+          </div>
+          <div class="purchase-action">
+            <div class="action-card">
+              <h3>2026년 가을 수확분 예약</h3>
+              <p>수확 즉시 가장 신선한 상태로 배송해 드립니다.</p>
+              <a href="buy.html" class="button button-primary button-large">주문 페이지로 이동</a>
+              <p class="small-text">*수확량에 따라 조기 품절될 수 있습니다.</p>
             </div>
           </div>
         </div>
-        <div class="photo-card photo-card-small"></div>
       </div>
     </section>
   </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">해미포포농장</span>
+        <p>자연이 주는 달콤한 건강, 프리미엄 포포</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-col">
+          <h4>Contact</h4>
+          <a href="tel:010-1234-5678">010-1234-5678</a>
+          <a href="mailto:popofarm@naver.com">popofarm@naver.com</a>
+        </div>
+        <div class="link-col">
+          <h4>Location</h4>
+          <address>
+            충청북도 서산시 해미면<br>
+            자연로 123-45
+          </address>
+        </div>
+        <div class="link-col">
+          <h4>Social</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Naver Blog</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Haemi Popo Farm. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
