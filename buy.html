@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>포포 구매하기 | 포포농장</title>
+  <meta name="description" content="포포농장의 신선한 포포를 주문하세요. 자연이 만든 최고의 맛을 직접 집으로 배송받으세요." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="buy-styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">🍃 포포팜</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#hero">HOME</a>
+        <a href="index.html#benefits">포포의 효능</a>
+        <a href="index.html#tree">포포과나무 소개</a>
+        <a href="index.html#story">포포농장 소개</a>
+        <a href="buy.html" class="active">한정기간 구매</a>
+        <a href="index.html#contact">연락처</a>
+      </nav>
+      <button class="menu-toggle" aria-label="메뉴 열기">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="buy-hero">
+      <div class="container">
+        <h1>포포 주문하기</h1>
+        <p>자연이 만든 최고의 맛을 당신의 집으로 배송해드립니다</p>
+      </div>
+    </section>
+
+    <section class="buy-section">
+      <div class="container">
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <div class="product-image-placeholder">🍃</div>
+            </div>
+            <div class="product-info">
+              <h3>포포 프리미엄 SET</h3>
+              <p class="product-desc">신선하고 맛있는 포포 6개</p>
+              <div class="product-specs">
+                <span>📦 1box (6개)</span>
+                <span>🚚 무료배송</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">45,000원</span>
+                <button class="add-btn" onclick="handleOrder('포포 프리미엄 SET', 45000)">주문</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <div class="product-image-placeholder">🍃</div>
+              <span class="badge">인기</span>
+            </div>
+            <div class="product-info">
+              <h3>포포 디럭스 SET</h3>
+              <p class="product-desc">선별된 포포 10개</p>
+              <div class="product-specs">
+                <span>📦 1box (10개)</span>
+                <span>🚚 무료배송</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">70,000원</span>
+                <button class="add-btn add-btn-primary" onclick="handleOrder('포포 디럭스 SET', 70000)">주문</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <div class="product-image-placeholder">🍃</div>
+            </div>
+            <div class="product-info">
+              <h3>포포 스페셜 SET</h3>
+              <p class="product-desc">최고급 포포 15개</p>
+              <div class="product-specs">
+                <span>📦 1box (15개)</span>
+                <span>🚚 무료배송</span>
+              </div>
+              <div class="product-footer">
+                <span class="price">98,000원</span>
+                <button class="add-btn" onclick="handleOrder('포포 스페셜 SET', 98000)">주문</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="buy-info">
+      <div class="container">
+        <h2>주문 안내</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <h4>🎯 판매 기간</h4>
+            <p>9월 중순 ~ 10월 말</p>
+            <p class="small">자연의 리듬에 따라 한정 판매됩니다</p>
+          </div>
+          <div class="info-card">
+            <h4>📦 배송 방법</h4>
+            <p>전국 무료배송</p>
+            <p class="small">안전한 포장으로 신선함을 그대로 전달합니다</p>
+          </div>
+          <div class="info-card">
+            <h4>💳 결제 방법</h4>
+            <p>카드 / 계좌이체 / 휴대폰결제</p>
+            <p class="small">안전하고 편리한 결제 시스템</p>
+          </div>
+          <div class="info-card">
+            <h4>📞 문의 사항</h4>
+            <p><a href="tel:010-1234-5678">010-1234-5678</a></p>
+            <p><a href="mailto:popopark@farm.com">popopark@farm.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="buy-faq">
+      <div class="container">
+        <h2>자주 묻는 질문</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>포포는 어떻게 먹나요?</summary>
+            <p>포포는 냉동실에서 꺼내어 실온에서 10-15분 정도 기다린 후, 위의 꼭지부분을 제거하고 숟가락으로 떠먹으면 됩니다. 또는 냉동한 채로 그대로 섭취하셔도 좋습니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary>유통기한은 얼마나 되나요?</summary>
+            <p>신선 포포는 수령 후 냉장 보관 시 2-3주 정도 보관 가능하며, 냉동 보관 시 2-3개월 보관 가능합니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary>배송은 언제 되나요?</summary>
+            <p>주문 후 2-3일 이내에 배송되며, 오후 기준으로 주문하신 상품은 다음날부터 배송됩니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary>반품 및 환불은 어떻게 되나요?</summary>
+            <p>상품 수령 후 7일 이내 반품 가능하며, 포장을 개봉하지 않은 상태에서만 환불이 가능합니다.</p>
+          </details>
+          <details class="faq-item">
+            <summary>대량 구매할 수 있나요?</summary>
+            <p>기업 또는 단체 대량 구매 시 별도 문의 부탁드립니다. 특별 할인이 가능합니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel-cta reveal">
+      <div class="container cta-content">
+        <div>
+          <h2>지금 포포를 만나보세요</h2>
+          <p>자연이 빚어낸 달콤한 선물을 주문하세요</p>
+        </div>
+        <a class="button button-primary" href="#products">상품 선택하기</a>
+      </div>
+    </section>
+
+    <section id="contact" class="panel panel-contact reveal">
+      <div class="container grid-2">
+        <div>
+          <span class="section-label">연락처</span>
+          <h2>더 궁금한 점이 있으신가요?</h2>
+          <p>포포농장 고객센터에 문의하세요. 신선하고 건강한 포포를 제공할 준비가 되어있습니다.</p>
+          <div class="contact-grid">
+            <div>
+              <strong>📧 이메일</strong>
+              <p><a href="mailto:popopark@farm.com">popopark@farm.com</a></p>
+            </div>
+            <div>
+              <strong>📞 전화</strong>
+              <p><a href="tel:010-1234-5678">010-1234-5678</a></p>
+            </div>
+            <div>
+              <strong>🕐 운영시간</strong>
+              <p>9:00 ~ 18:00</p>
+            </div>
+            <div>
+              <strong>📍 위치</strong>
+              <p>경북 경산시</p>
+            </div>
+          </div>
+        </div>
+        <div class="buy-contact-image">
+          <div class="buy-image-placeholder">🌾</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 포포농장. All rights reserved.</p>
+      <p><a href="index.html">메인페이지로 돌아가기</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="buy-script.js"></script>
+</body>
+</html>

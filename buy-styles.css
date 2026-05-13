@@ -1,0 +1,346 @@
+/* Buy Page Styles */
+
+.site-nav a.active {
+  color: var(--accent-dark);
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent-dark);
+  padding-bottom: 0.25rem;
+}
+
+.buy-hero {
+  background: linear-gradient(135deg, rgba(120, 149, 108, 0.15), rgba(34, 51, 33, 0.08));
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.buy-hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: #1f331d;
+}
+
+.buy-hero p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.buy-section {
+  padding: 4rem 0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(40, 49, 26, 0.12);
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(120, 149, 108, 0.1), rgba(178, 195, 159, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.product-image-placeholder {
+  font-size: 4rem;
+  opacity: 0.8;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--accent-dark);
+  color: white;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.product-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #1f331d;
+}
+
+.product-desc {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.product-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.add-btn {
+  padding: 0.7rem 1.4rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid var(--accent-dark);
+  color: var(--accent-dark);
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.add-btn:hover {
+  background: var(--accent-dark);
+  color: white;
+}
+
+.add-btn-primary {
+  background: var(--accent-dark);
+  color: white;
+  border-color: var(--accent-dark);
+}
+
+.add-btn-primary:hover {
+  background: #3a4a32;
+  border-color: #3a4a32;
+}
+
+.buy-info {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 3rem 0;
+  margin: 2rem 0;
+  border-radius: 20px;
+}
+
+.buy-info h2 {
+  text-align: center;
+  margin: 0 0 2.5rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: #1f331d;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1.8rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.info-card h4 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  color: var(--accent-dark);
+}
+
+.info-card p {
+  margin: 0.5rem 0;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.info-card .small {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.info-card a {
+  color: var(--accent-dark);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.info-card a:hover {
+  color: var(--accent);
+}
+
+.buy-faq {
+  padding: 3rem 0;
+}
+
+.buy-faq h2 {
+  text-align: center;
+  margin: 0 0 2rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: #1f331d;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 30px rgba(40, 49, 26, 0.08);
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #1f331d;
+  list-style: none;
+  user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::before {
+  content: '+';
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: var(--accent-dark);
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::before {
+  content: '−';
+  transform: rotate(90deg);
+}
+
+.faq-item p {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+  padding-left: 2rem;
+}
+
+.buy-contact-image {
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 300px;
+  background: linear-gradient(135deg, rgba(120, 149, 108, 0.1), rgba(178, 195, 159, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buy-image-placeholder {
+  font-size: 5rem;
+  opacity: 0.8;
+}
+
+.site-footer {
+  background: rgba(34, 51, 33, 0.05);
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0.5rem 0;
+}
+
+.site-footer a {
+  color: var(--accent-dark);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .buy-hero {
+    padding: 2.5rem 0;
+  }
+
+  .buy-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid,
+  .faq-list {
+    grid-template-columns: 1fr;
+  }
+
+  .buy-section {
+    padding: 2rem 0;
+  }
+}
